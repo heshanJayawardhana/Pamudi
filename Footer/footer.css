@@ -1,0 +1,130 @@
+/* Footer css */
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Faculty Glyphic;   
+    background-color:#1b3c3d;
+    color: #d2cb75;
+    position: relative;
+    z-index: 5;
+}
+
+footer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    filter: blur(3px);
+    background: linear-gradient(to top, #102324, #397d80), url('../pictures/chef-cooks-with-ingredients-tableware-recipe-make-delicious-dish.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.box{
+    display: flex;
+}
+
+.f_bigBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 25%;
+}
+
+.f_bigBox:first-child {
+    gap: 15px;
+}
+
+.f_bigBox img{
+    width: 80%;
+    display: flex;
+}
+
+.f_subBoxes .topic{
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 55px;
+    margin-top: 120px
+}
+
+.f_subBoxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.f_subBoxes a{
+    text-decoration: none;
+    color: #d2cb75;
+    padding-bottom: 20px;
+}
+
+.f_subBoxes #email{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(99, 99, 99);
+}
+
+.f_subBoxes button{
+    border: none;
+    font-family: Faculty Glyphic;
+    font-weight: 900;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    background-color:rgb(99, 99, 99);
+    color:white;
+    margin-top: 13px;
+    font-size: 16px;
+    font-family: Faculty Glyphic;
+}
+
+.f_subBoxes button:hover{
+    background-color:rgb(169, 166, 166);
+    color:black;
+    transition: all ease-in-out 0.25s;
+}
+
+#social_icons {
+    font-size: 16px;
+    color: #fff;
+    gap: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#social_icons i {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+#social_icons i:hover {
+    color: #00bbf0;
+}
+
+.details{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
